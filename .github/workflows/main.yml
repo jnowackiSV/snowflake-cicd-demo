@@ -35,7 +35,7 @@ jobs:
  
       # From: https://github.com/Snowflake-Labs/snowflake-cli-action
       - name: Snowflake CLI Installation
-        uses: snowflakedb/snowflake-cli-action@v1 #Snowflake-Labs/snowflake-cli-action@v1
+        uses: snowflakedb/snowflake-cli-action@v1.5 #Snowflake-Labs/snowflake-cli-action@v1
         with:
           cli-version: "latest"
           default-config-file-path: "config.toml"
