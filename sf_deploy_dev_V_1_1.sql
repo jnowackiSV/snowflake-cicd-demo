@@ -1,11 +1,11 @@
 -- TABLES
-EXECUTE IMMEDIATE FROM @DEMO_SNOWFLAKE_REPO/branches/main/snowflake-cicd-demo/bronze/Tables/Customer.sql USING (ENV => 'DEV');
-EXECUTE IMMEDIATE FROM @DEMO_SNOWFLAKE_REPO/branches/main/snowflake-cicd-demo/bronze/Tables/Orders.sql USING (ENV => 'DEV');
-EXECUTE IMMEDIATE FROM @DEMO_SNOWFLAKE_REPO/branches/main/snowflake-cicd-demo/bronze/Tables/Product.sql USING (ENV => 'DEV');
-EXECUTE IMMEDIATE FROM @DEMO_SNOWFLAKE_REPO/branches/main/snowflake-cicd-demo/silver/Tables/Customer.sql USING (ENV => 'DEV');
-EXECUTE IMMEDIATE FROM @DEMO_SNOWFLAKE_REPO/branches/main/snowflake-cicd-demo/silver/Tables/Orders.sql USING (ENV => 'DEV');
-EXECUTE IMMEDIATE FROM @DEMO_SNOWFLAKE_REPO/branches/main/snowflake-cicd-demo/silver/Tables/Product.sql USING (ENV => 'DEV');
-EXECUTE IMMEDIATE FROM @DEMO_SNOWFLAKE_REPO/branches/main/snowflake-cicd-demo/gold/Tables/Shipping.sql USING (ENV => 'DEV');
+EXECUTE IMMEDIATE FROM @DEMO_SNOWFLAKE_REPO/branches/master/bronze/Tables/Customer.sql USING (ENV => 'DEV');
+EXECUTE IMMEDIATE FROM @DEMO_SNOWFLAKE_REPO/branches/master/bronze/Tables/Orders.sql USING (ENV => 'DEV');
+EXECUTE IMMEDIATE FROM @DEMO_SNOWFLAKE_REPO/branches/master/bronze/Tables/Product.sql USING (ENV => 'DEV');
+EXECUTE IMMEDIATE FROM @DEMO_SNOWFLAKE_REPO/branches/master/silver/Tables/Customer.sql USING (ENV => 'DEV');
+EXECUTE IMMEDIATE FROM @DEMO_SNOWFLAKE_REPO/branches/master/silver/Tables/Orders.sql USING (ENV => 'DEV');
+EXECUTE IMMEDIATE FROM @DEMO_SNOWFLAKE_REPO/branches/master/silver/Tables/Product.sql USING (ENV => 'DEV');
+EXECUTE IMMEDIATE FROM @DEMO_SNOWFLAKE_REPO/branches/master/gold/Tables/Shipping.sql USING (ENV => 'DEV');
  
 -- VIEWS
 EXECUTE IMMEDIATE FROM @DEMO_SNOWFLAKE_REPO/branches/main/snowflake-cicd-demo/bronze/Views/Customer_Orders.sql USING (ENV => 'DEV');
